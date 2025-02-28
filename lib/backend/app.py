@@ -2016,6 +2016,9 @@ def test_users_chart(year):
     return jsonify(chart_data), 200
 
 
+
+
+
 @app.route('/active-cities', methods=['GET'])
 def get_active_cities():
     """
@@ -2044,6 +2047,8 @@ def get_active_cities():
     filtered_active_cities = [city for city in active_cities if city in cities_with_cars]
 
     return jsonify(filtered_active_cities)
+
+
 
 
 @app.route('/city-details', methods=['POST'])
@@ -2094,7 +2099,7 @@ def get_city_details():
             'city': city,
             'Total Cars': car_count,
             'Total Trips': trip_count,
-            'Total Income': formatted_total_income, 
+            'Total Income': formatted_total_income,  # Includes '₹' sign
         }
 
         return jsonify(city_details), 200
