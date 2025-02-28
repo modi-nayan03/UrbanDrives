@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # zoomwheels
 
 A new Flutter project.
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# UrbanDrives
+Urban Drives is a dynamic car rental application that allows users to rent cars effortlessly while providing an opportunity for hosts to list their vehicles for rent. Whether you need a car for a short trip or want to earn by renting out your vehicle, Urban Drives connects renters and hosts seamlessly.
+>>>>>>> ba894084266064daa88441b154257428ca8096a2
