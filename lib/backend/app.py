@@ -2017,24 +2017,6 @@ def test_users_chart(year):
 
 
 
-# @app.route('/active-cities', methods=['GET'])
-# def get_active_cities():
-#     try:
-#         # Use aggregation to find distinct cities from all relevant collections
-#         cities_from_users = users_collection.distinct("city")
-#         cities_from_cars = cars_collection.distinct("city")
-#         cities_from_bookings = bookings_collection.distinct("pickupLocation")  # Assuming city is in pickupLocation
-#         cities_from_trips = trips_collection.distinct("pickupLocation") # Assuming city is in pickupLocation
-
-#         # Combine and deduplicate the lists of cities
-#         active_cities = list(set(cities_from_users + cities_from_cars + cities_from_bookings + cities_from_trips))
-
-#         return jsonify(active_cities), 200
-#     except Exception as e:
-#         print(f"Error getting active cities: {e}")
-#         return jsonify({'message': 'Failed to fetch active cities', 'error': str(e)}), 500
-
-
 
 
 @app.route('/active-cities', methods=['GET'])
